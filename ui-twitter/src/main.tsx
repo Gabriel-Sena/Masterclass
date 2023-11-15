@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import { Tweet } from './components/Tweet'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <div>
+      <Tweet user="Rodrigo" content="Meu primeiro tweet" />
+      <Tweet user="Gabriel" content="Olá, Mundo!" />
+      <Tweet user="Carla" content="Testee" />
+    </div>
   </React.StrictMode>,
 )
