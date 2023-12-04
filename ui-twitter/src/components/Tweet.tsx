@@ -5,8 +5,9 @@ interface TweetProps {
 }
 
 export function Tweet(props: TweetProps) {
+
   return (
-    <div className="tweet" style={{borderRadius: 8}}>
+    <div>
       <strong>{props.user}</strong>
       <p>{props.children}</p>
       <button>Like{props.likes ?? 0}</button>
